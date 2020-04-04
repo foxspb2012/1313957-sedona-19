@@ -73,11 +73,24 @@
         <header class="section-header">
           <h2 class="visually-hidden">Видео</h2>
           <b class="section-header__slogan">Все еще сомневаетесь?</b>
-          <p class="ssection-header__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="section-header__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </header>
         <video class="video__file" width = "321" height = "201" controls>
           <source src="#" type="video/mp4">
+            <track src="#" kind="subtitles" srclang="en" label="English">
+            <track src="#" kind="subtitles" srclang="ru" label="Russian" default>
         </video>
+        <div class="controls">
+          <button class="controls__button replay" type="button" name="replay">
+            <img class="controls__button-img" src="img/#" alt="replay" width="16" height="20">
+          </button>
+          <button class="controls__button subtitles" type="button" name="subtitles">
+            <img class="controls__button-img" src="img/#" alt="subtitles" width="32" height="20">
+          </button>
+          <button class="controls__button fullscreen" type="button" name="fullscreen">
+            <img class="controls__button-img" src="img/#" alt="fullscreen" width="20" height="20">
+          </button>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
