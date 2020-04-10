@@ -1,0 +1,65 @@
+/* подключение шрифтов из локальной папки */
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("../fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("../fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* описание для border-box */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* опишем тег body */
+body {
+  min-width: 320px;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #333333;
+
+  background-color: @bg-colour;
+}
+
+/* поведение картинок */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* служебный класс visually-hidden*/
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
