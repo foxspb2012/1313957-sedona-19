@@ -15,10 +15,14 @@
   line-height: 21px;
 }
 
-.advangates__list:nth-child(1),
-.advangates__list:nth-child(2) {
-  color: #ffffff;
+.advangates__list li:nth-child(1),
+.advangates__list li:nth-child(2) {
   background-color: @bg-navigation;
+  & .advangates__title,
+  & .advangates__number,
+  & .advangates__description {
+    color: #ffffff;
+  }
 }
 
 .advangates__list:nth-child(1) {

@@ -1,20 +1,3 @@
-/* подключение шрифтов из локальной папки */
-@font-face {
-  font-family: "PT Sans Narrow";
-  src: url("../fonts/ptsans.woff") format("woff");
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans Narrow";
-  src: url("../fonts/ptsansbold.woff") format("woff");
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
 /* описание для border-box */
 html {
   -webkit-box-sizing: border-box;
@@ -63,5 +46,16 @@ img {
   overflow: hidden;
 }
 
+ /* уберем подчеркивание у ссылок */
+ a {
+  text-decoration: none;
+}
 
-
+/* уберем маркеры списков*/
+.main-nav__list,
+.advangates__list,
+.info__list,
+.social__list,
+.reviews__list {
+  list-style: none;
+ }
