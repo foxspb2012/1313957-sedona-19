@@ -1,3 +1,7 @@
+.reviews__list {
+  .reset-list();
+ }
+
 .reviews__title {
   font-weight: bold;
   text-align: left;
@@ -20,21 +24,10 @@
   margin-bottom: 19px;
 }
 
-.reviews__likes {
-  color: #000000;
-  font-weight: bold;
-
-  &::before{
-    content: "";
-    position: absolute;
-    width: 21px;
-    height: 23px;
-    background-image: url("/source/img/icon-like.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.reviews__like-icon {
+  fill: #000000;
+  opacity: 0.3;
 }
-
 
 
 
