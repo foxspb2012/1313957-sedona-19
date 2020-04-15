@@ -1,0 +1,52 @@
+/* описание для border-box */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* опишем тег body */
+body {
+  min-width: 320px;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 26px;
+  color: #333333;
+
+  background-color: @bg-colour;
+}
+
+/* поведение картинок */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* служебный класс visually-hidden*/
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ /* уберем подчеркивание у ссылок */
+ a {
+  text-decoration: none;
+}
