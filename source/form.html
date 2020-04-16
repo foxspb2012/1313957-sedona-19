@@ -10,7 +10,7 @@
     <header class = "page-header">
       <nav class="main-nav">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="img/#" width="102" height="83" alt="Седона">
+          <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
         </a>
         <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -35,74 +35,74 @@
     <main class="page-main">
       <h1 class="visually-hidden">Страница для отзывов</h1>
       <div class="main-header">
-        <img class="main-header__text" src="img/#" width="229" height="39" alt="Седона">
+        <img class="main-header__text" src="img/bg-back-mobile@1x.jpg" width="320" height="390" alt="Седона">
       </div>
       <section>
         <header class="section-header">
           <h2 class="visually-hidden">Оставьте свой отзыв</h2>
           <b class="section-header__slogan">Оставьте свой отзыв</b>
-          <p class="section-header__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="section-header__intro no-index">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <div class="feedback-form">
           <form class="feedback" name="feedback" action="https://echo.htmlacademy.ru" method="post">
             <h3 class="feedback__header">Представьтесь:</h3>
             <p class="feedback__item">
               <label class="feedback__label" for="field-name">Имя<sup>*</sup>:</label>
-              <input class="feedback__input" id="field-name" type="text" name="first-name" placeholder="Петр" required>
+              <input class="feedback__input selectors" id="field-name" type="text" name="first-name" placeholder="Петр" required>
             </p>
             <p class="feedback__item">
               <label class="feedback__label" for="field-surname">Фамилия<sup>*</sup>:</label>
-              <input class="feedback__input" id="field-surname" type="text" name="surname" placeholder="Иванов" required>
+              <input class="feedback__input selectors" id="field-surname" type="text" name="surname" placeholder="Иванов" required>
             </p>
             <p class="feedback__item">
               <label class="feedback__label" for="middle-name">Отчество:</label>
-              <input class="feedback__input" id="middle-name" type="text" name="middle-name" placeholder="Александрович">
+              <input class="feedback__input selectors" id="middle-name" type="text" name="middle-name" placeholder="Александрович">
             </p>
             <h3 class="feedback__header">Контактная информация:</h3>
             <p class="feedback__item feedback__item--contacts">
               <label class="feedback__label" for="field-phone">Контактный телефон<sup>*</sup>:</label>
-              <input class="feedback__input" id="field-phone" type="tel" name="phone-number" placeholder="Введите телефон" pattern="\+1\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"required>
+              <input class="feedback__input selectors" id="field-phone" type="tel" name="phone-number" placeholder="Введите телефон" pattern="\+1\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"required>
             </p>
             <p class="feedback__item feedback__item--contacts">
               <label class="feedback__label" for="field-email">Электронная почта<sup>*</sup>:</label>
-              <input class="feedback__input" id="field-email" type="email" name="email" placeholder="Введите e-mail" required>
+              <input class="feedback__input selectors" id="field-email" type="email" name="email" placeholder="Введите e-mail" required>
             </p>
             <h3 class="feedback__header">Ваше общее впечатление:</h3>
             <ul class="feedback__radio">
               <li class="feedback__radio-toggle">
                 <input class="feedback__radio-input" type="radio" id="rather-positive" name="feedback-impression" value="rather-positive" checked>
-                <label class="feedback__radio-label" for="rather-positive" tabindex="1">Скорее положительное</label>
+                <label class="feedback__radio-label selectors" for="rather-positive" tabindex="1">Скорее положительное</label>
               </li>
               <li class="feedback__radio-toggle">
                 <input class="feedback__radio-input" type="radio" id="rather-negative" name="feedback-impression" value="rather-negative">
-                <label class="feedback__radio-label" for="rather-negative" tabindex="2">Скорее отрицательное</label>
+                <label class="feedback__radio-label selectors" for="rather-negative" tabindex="2">Скорее отрицательное</label>
               </li>
               <li class="feedback__radio-toggle">
                 <input class="feedback__radio-input" type="radio" id="cannot-answer" name="feedback-impression" value="cannot-answer">
-                <label class="feedback__radio-label" for="cannot-answer" tabindex="3">Затрудняюсь ответить</label>
+                <label class="feedback__radio-label selectors" for="cannot-answer" tabindex="3">Затрудняюсь ответить</label>
               </li>
             </ul>
             <h3 class="feedback__header">Посещенные достопримечательности:</h3>
             <ul class="feedback__checklist">
               <li class="feedback__checklist-toggle">
                 <input class="feedback__checklist-input" type="checkbox" id="devil-bridge" name="feedback-attractions" value="devil-bridge" checked>
-                <label class="feedback__checklist-label" for="devil-bridge" tabindex="0">Мост Дьявола</label>
+                <label class="feedback__checklist-label selectors" for="devil-bridge" tabindex="0">Мост Дьявола</label>
               </li>
               <li class="feedback__checklist-toggle">
                 <input class="feedback__checklist-input" type="checkbox" id="bell-mountain" name="feedback-attractions" value="bell-mountain" checked>
-                <label class="feedback__checklist-label" for="bell-mountain" tabindex="0">Гора-Колокол</label>
+                <label class="feedback__checklist-label selectors" for="bell-mountain" tabindex="0">Гора-Колокол</label>
               </li>
               <li class="feedback__checklist-toggle">
                 <input class="feedback__checklist-input" type="checkbox" id="slide-park" name="feedback-attractions" value="slide-park" checked>
-                <label class="feedback__checklist-label" for="slide-park" tabindex="0">Слайд-парк</label>
+                <label class="feedback__checklist-label selectors" for="slide-park" tabindex="0">Слайд-парк</label>
               </li>
               <li class="feedback__checklist-toggle">
                 <input class="feedback__checklist-input" type="checkbox" id="red-rock" name="feedback-attractions" value="red-rock">
-                <label class="feedback__checklist-label" for="red-rock" tabindex="0">Красные скалы</label>
+                <label class="feedback__checklist-label selectors" for="red-rock" tabindex="0">Красные скалы</label>
               </li>
             </ul>
             <h3 class="feedback__header">Опишите свои эмоции:</h3>
-            <textarea class="feedback__message" name="text-message" cols="25" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback__message selectors" name="text-message" cols="25" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
             <button class="feedback__button button" type="submit">Отправить отзыв</button>
           </form>
         </div>
@@ -127,7 +127,9 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="img/#" alt="Логотип HTML Academy">
+            <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
           </a>
         </div>
       </div>
