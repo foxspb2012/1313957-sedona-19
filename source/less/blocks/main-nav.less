@@ -12,6 +12,37 @@
   height: 83px;
 }
 
+.main-nav__toggle {
+  font-size: 0;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--close .main-nav__toggle {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
+  width: 23px;
+  height: 21px;
+
+  background-image: url("../img/icon-menu.svg");
+}
+
+.main-nav--open .main-nav__toggle {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
+  width: 23px;
+  height: 21px;
+
+  background-image: url("../img/icon-cross.svg");
+}
+
 .main-nav__list li {
   background-color: @bg-navigation;
 }
