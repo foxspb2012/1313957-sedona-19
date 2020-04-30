@@ -11,6 +11,8 @@ html {
 /* опишем тег body */
 body {
   min-width: 320px;
+  margin: 0;
+  padding: 0;
 
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -49,4 +51,26 @@ img {
  /* уберем подчеркивание у ссылок */
  a {
   text-decoration: none;
+}
+
+/* установим медиазапросы для определения ширины контейнеров */
+.container {
+  margin: 0 auto;
+  max-width: @mobile-width-container;
+  padding: 0 20px;
+  background-color: @bg-colour;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    max-width: @tablet-width-container;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    max-width: @desktop-width-container;
+    padding: 0 70px;
+  }
 }
