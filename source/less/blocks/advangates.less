@@ -1,30 +1,107 @@
-.advangates__item {
-  background-color: @bg-advangates;
-}
+.advangates {
+  position: relative;
+  padding-top: 19px;
 
-.advangates__title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000000;
-}
-
-.advangates__number,
-.advangates__description {
-  line-height: 21px;
-}
-
-.advangates__list {
-  .reset-list();
- }
-
-.advangates__list li:nth-child(1),
-.advangates__list li:nth-child(2) {
-  background-color: @bg-navigation;
-  .advangates__title,
-  .advangates__number,
-  .advangates__description {
-    color: #ffffff;
+  @media  (min-width: @tablet-width) {
+    padding-top: 0;
   }
 }
 
+.advangates__main {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  &--reverse {
+    @media (min-width: @tablet-width) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.advangates__description {
+  box-sizing: border-box;
+  padding: 38px 20px 25px;
+  color: @bg-colour;
+  background-color: @bg-navigation;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 20px 26px;
+    width: 33.333333%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 53px 45px 26px;
+  }
+
+  &--first {
+    padding-top: 58px;
+  }
+}
+
+.advangates__subtitle {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 160px;
+  }
+
+  &--main {
+    color: @bg-colour;
+  }
+}
+
+.advangates__number {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.advangates__description {
+  margin-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.advangates__image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 66.666666%;
+    min-height: 256px;
+    height: auto;
+  }
+}
+
+.advangates__image {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 56%;
+    transform: translateY(-54%);
+    height: auto;
+  }
+}

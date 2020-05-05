@@ -2,13 +2,125 @@
   .reset-list();
  }
 
-.info__title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000000;
-}
-
 .info__description {
   line-height: 21px;
 }
 
+.info {
+  margin: 0 auto;
+  padding: 24px 20px 23px 20px;
+  width: 280px;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.info__item {
+  position: relative;
+  margin-bottom: 27px;
+  padding-left: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding: 150px 45px 47px 45px;
+    width: 33.333333%;
+    text-align: center;
+  }
+
+  @media (min-width:@desktop-width) {
+    padding-bottom: 68px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: @tablet-width) {
+      top: 58px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  &--hotel {
+    @media (min-width: @tablet-width) {
+      order: 0;
+    }
+  }
+
+  &--souvenirs {
+    @media (min-width: @tablet-width) {
+      order: 2;
+    }
+  }
+
+  &--meal {
+    @media (min-width: @tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--hotel::before {
+    background-image: url("../img/icon-house.svg");
+    background-size: 39px 37px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 75px 72px;
+    }
+  }
+
+  &--souvenirs::before {
+    background-image: url("../img/icon-gift.svg");
+    background-size: 32px 38px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 64px 75px;
+    }
+  }
+
+  &--meal::before {
+    background-image: url("../img/icon-burger.svg");
+    background-size: 40px 35px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 77px 68px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.info__title {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 17px;
+    font-size: 21px;
+  }
+}
+
+.info__description {
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+  }
+}

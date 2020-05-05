@@ -1,55 +1,76 @@
-.main-nav__list {
-  .reset-list();
- }
+.main-nav {
+  position: relative;
+  padding-bottom: 56px;
 
-.main-nav__logo {
-  height: 83px;
-  text-align: center;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
-.main-nav__logo img {
-  width: 102px;
-  height: 83px;
+.main-nav__logo {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: -28px;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    bottom: auto;
+  }
 }
 
 .main-nav__toggle {
-  font-size: 0;
-
-  cursor: pointer;
-  border: none;
-}
-
-.main-nav--close .main-nav__toggle {
-  content: "";
   position: absolute;
-  top: 17px;
-  right: 20px;
+  top: 3px;
+  right: 7px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
 
-  width: 23px;
-  height: 21px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    width: 28px;
+    height: 4px;
+    background-color: @bg-colour;
+  }
 
-  background-image: url("../img/icon-menu.svg");
+  &::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  &--off {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 23px;
+      height: 4px;
+      background-color: @bg-navigation;
+      box-shadow: 0 9px 0 0 @bg-navigation, 0 18px 0 0 @bg-navigation;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
-.main-nav--open .main-nav__toggle {
-  content: "";
-  position: absolute;
-  top: 17px;
-  right: 20px;
-
-  width: 23px;
-  height: 21px;
-
-  background-image: url("../img/icon-cross.svg");
-}
-
-.main-nav__list li {
-  background-color: @bg-navigation;
-}
-
-.main-nav__item a {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 40px;
-  color: #ffffff;
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
