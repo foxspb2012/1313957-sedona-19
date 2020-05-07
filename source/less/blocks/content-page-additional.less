@@ -1,0 +1,41 @@
+.content-page-additional {
+  .list-reset(6.25%);
+
+  padding-right: 6.25%;
+  background-color: @bg-color-map;
+  text-align: center;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.content-page-additional__item {
+  box-sizing: border-box;
+  padding: 26px 15px 13px;
+  border-bottom: 1px solid @border-color-item;
+
+  @media @tablet {
+    padding: 45px 49px 30px;
+    width: 33.333333%;
+    border-bottom: none;
+  }
+
+  @media @desktop {
+    padding-bottom: 50px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.content-page-additional__text {
+  @media @tablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
