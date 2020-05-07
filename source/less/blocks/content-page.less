@@ -1,38 +1,55 @@
-.advangates {
+.content-page {
   position: relative;
   padding-top: 19px;
 
-  @media  (min-width: @tablet-width) {
+  @media @tablet {
     padding-top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 37px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 37px;
+
+    @media @tablet {
+      content: none;
+    }
   }
 }
 
-.advangates__main {
-  @media (min-width: @tablet-width) {
+.content-page__main {
+  @media @tablet {
     display: flex;
     flex-wrap: wrap;
   }
 
   &--reverse {
-    @media (min-width: @tablet-width) {
+    @media @tablet {
       flex-direction: row-reverse;
     }
   }
 }
 
-.advangates__description {
+.content-page__description {
   box-sizing: border-box;
-  padding: 38px 20px 25px;
-  color: @bg-colour;
-  background-color: @bg-navigation;
+  padding: 38px 6.25% 25px;
+  color: @font-color-secondary;
+  background-color: @bg-color-button;
   text-align: center;
 
-  @media (min-width: @tablet-width) {
+  @media @tablet {
     padding: 45px 20px 26px;
     width: 33.333333%;
   }
 
-  @media (min-width: @desktop-width) {
+  @media @desktop {
     padding: 53px 45px 26px;
   }
 
@@ -41,64 +58,64 @@
   }
 }
 
-.advangates__subtitle {
+.content-page__subtitle {
   margin: 0 auto;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 26px;
-  color: #000000;
+  color: @font-color-heading;
 
-  @media (min-width: @tablet-width) {
+  @media @tablet {
     font-size: 21px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media @desktop {
     max-width: 160px;
   }
 
   &--main {
-    color: @bg-colour;
+    color: @font-color-secondary;
   }
 }
 
-.advangates__number {
+.content-page__number {
   margin-top: 9px;
   margin-bottom: 9px;
 }
 
-.advangates__description {
+.content-page__text {
   margin-top: 16px;
 
-  @media (min-width: @tablet-width) {
+  @media @tablet {
     margin-top: 22px;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
-.advangates__image-wrapper {
+.content-page__image-wrapper {
   position: relative;
   overflow: hidden;
   height: 260px;
 
-  @media (min-width: @tablet-width) {
-    width: 66.666666%;
+  @media @tablet {
+    width: 66.666667%;
     min-height: 256px;
     height: auto;
   }
 }
 
-.advangates__image {
+.content-page__image {
   display: block;
   width: 100%;
   height: 260px;
   object-fit: cover;
 
-  @media (min-width: @tablet-width) {
+  @media @tablet {
     height: 256px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media @desktop {
     position: absolute;
     top: 56%;
     transform: translateY(-54%);
