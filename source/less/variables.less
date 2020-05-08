@@ -1,15 +1,8 @@
-
+//Template breakpoints
 @mobile-width: 320px;
 @tablet-width: 768px;
 @desktop-width: 1200px;
-
-@mobile-width-container: 480px;
-@tablet-width-container: 940px;
-@desktop-width-container: 1440px;
-
 @tablet-max-width: (@desktop-width - 1);
-
-@retina-dpi: 144dpi;
 
 @mobile: ~"(min-width: @{mobile-width})";
 @tablet: ~"(min-width: @{tablet-width})";
@@ -17,12 +10,21 @@
 
 @tablet-only: ~"(max-width: @{tablet-max-width})";
 
+//Template containers
+@mobile-width-container: 480px;
+@tablet-width-container: 940px;
+@desktop-width-container: 1440px;
 
+//Template retina media
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
 
+//Template Fonts for BODY
 @font-family-base: "PT Sans", "Arial", sans-serif;
 @font-size-base: 14px;
 @line-height-base: 21px;
 
+//Template Colors
 @black: #000000;
 @white: #ffffff;
 
