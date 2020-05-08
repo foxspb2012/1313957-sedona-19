@@ -1,4 +1,4 @@
-.form-feedback {
+.feedback-form {
   display: flex;
   flex-direction: column;
   line-height: 26px;
@@ -17,7 +17,7 @@
   }
 }
 
-.form-feedback__fieldset {
+.feedback-form__fieldset {
   position: relative;
   margin: 0;
   padding: 65px 6.25% 5px;
@@ -117,7 +117,7 @@
   }
 }
 
-.form-feedback__legend {
+.feedback-form__legend {
   position: absolute;
   left: 0;
   top: 18px;
@@ -150,7 +150,7 @@
   }
 }
 
-.form-feedback__striked-text {
+.feedback-form__striked-text {
   @media @tablet {
     display: flex;
     align-items: center;
@@ -185,7 +185,7 @@
   }
 }
 
-.form-feedback__input-wrapper {
+.feedback-form__input-wrapper {
   .list-reset();
 
   &--achivments {
@@ -213,7 +213,7 @@
   }
 }
 
-.form-feedback__input-block {
+.feedback-form__input-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -296,7 +296,7 @@
   }
 }
 
-.form-feedback__label {
+.feedback-form__label {
   display: block;
   margin-right: 15px;
 
@@ -311,13 +311,13 @@
   }
 }
 
-.form-feedback__label-aux {
+.feedback-form__label-aux {
   @media @desktop {
     display: none;
   }
 }
 
-.form-feedback__label-checkbox {
+.feedback-form__label-checkbox {
   position: relative;
   display: block;
   padding-top: 13px;
@@ -370,16 +370,16 @@
   }
 }
 
-.form-feedback__checkbox:checked + .form-feedback__label-checkbox::after {
+.feedback-form__checkbox:checked + .feedback-form__label-checkbox::after {
   display: block;
 }
 
-.form-feedback__checkbox:focus + .form-feedback__label-checkbox {
+.feedback-form__checkbox:focus + .feedback-form__label-checkbox {
   outline: 4px solid @bg-color-body;
   outline-offset: 2px;
 }
 
-.form-feedback__label-radio {
+.feedback-form__label-radio {
   position: relative;
   display: block;
   padding-top: 15px;
@@ -437,16 +437,16 @@
   }
 }
 
-.form-feedback__radio:checked + .form-feedback__label-radio::after {
+.feedback-form__radio:checked + .feedback-form__label-radio::after {
   display: block;
 }
 
-.form-feedback__radio:focus + .form-feedback__label-radio {
+.feedback-form__radio:focus + .feedback-form__label-radio {
   outline: 4px solid @bg-color-body;
   outline-offset: 2px;
 }
 
-.form-feedback__input-text {
+.feedback-form__input-text {
   box-sizing: border-box;
   padding: 12px 17px;
   width: 100%;
@@ -479,11 +479,11 @@
   }
 }
 
-.form-feedback__input-text::placeholder {
+.feedback-form__input-text::placeholder {
   color: inherit;
 }
 
-.form-feedback__textarea {
+.feedback-form__textarea {
   padding-top: 11px;
   padding-bottom: 11px;
   min-height: 160px;
@@ -496,7 +496,7 @@
   }
 }
 
-.form-feedback__submit-wrapper {
+.feedback-form__submit-wrapper {
   padding: 37px 6.25% 37px;
 
   @media @tablet {
@@ -513,7 +513,7 @@
   }
 }
 
-.form-feedback__button {
+.feedback-form__button {
   width: 100%;
 
   @media @tablet {
@@ -521,7 +521,7 @@
   }
 }
 
-.form-feedback__notification {
+.feedback-form__notification {
   display: none;
 
   @media @tablet {
