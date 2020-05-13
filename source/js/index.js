@@ -1,3 +1,5 @@
+  // Открытие/закрытие меню
+
   var mainNav = '.main-nav';
   var mainMenu = '.main-menu';
   var noJS = 'main-nav--no-js';

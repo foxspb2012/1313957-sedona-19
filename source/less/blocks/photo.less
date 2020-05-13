@@ -59,13 +59,15 @@
     position: absolute;
     z-index: 10;
     bottom: 0;
-    width: ~"calc(100% - 20px * 2)";
+    width: 100%;
     color: @font-color-secondary;
     background-color: fade(@black, 30%);
   }
 }
 
 .photo__description {
+  text-align: left;
+
   @media @tablet {
     max-width: 75%;
   }
@@ -74,7 +76,7 @@
 .photo__title {
   margin: 0;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: bold;
   color: @font-color-heading;
 
   @media @desktop {
@@ -101,7 +103,7 @@
 .photo__like-count {
   align-self: flex-end;
   margin-left: 13px;
-  font-weight: 700;
+  font-weight: bold;
   color: @font-color-heading;
   line-height: 14px;
 
