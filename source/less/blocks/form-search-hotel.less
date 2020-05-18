@@ -113,39 +113,35 @@
   }
 }
 
-.form-search-field:hover {
-  font: inherit;
-  background-color: @bg-color-form;
-  font-size: 14px;
-  font-weight: bold;
-  color: @black;
-}
-
-.form-search-field:focus {
-  font: inherit;
-  background-color: @white;
-  font-size: 14px;
-  font-weight: bold;
-  color: @black;
+.form-search-field {
+  &:hover,
+  &:focus {
+    font: inherit;
+    background-color: @bg-color-form;
+    font-size: 14px;
+    font-weight: bold;
+    color: @black;
+  }
 }
 
 .form-search-calendar {
   position: relative;
-  top: 6px;
-  right: 40px;
+  top: 4px;
+  right: 44px;
   background-color: transparent;
   fill: @bg-color-form-calendar;
   border: none;
+
+  &:hover {
+    fill: @black;
+  }
+
+  &:active {
+    font: inherit;
+    fill: @bg-color-button;
+  }
 }
 
-.form-search-calendar:hover {
-  fill: @black;
-}
-
-.form-search-calendar:active {
-  font: inherit;
-  fill: @bg-color-button;
-}
 
 .humans {
   display: flex;
@@ -158,7 +154,7 @@
 
   @media @tablet {
     flex-direction: row;
-    margin-bottom: 42px;
+    margin-bottom: 30px;
     width: 432px;
     margin-left: 0;
   }
@@ -223,28 +219,39 @@
   height: 38px;
   object-fit: contain;
   background-color: transparent;
-  fill: @bg-color-form-calendar;
+  color: @bg-color-form-calendar;
   border: none;
+
+}
+
+.find-item button {
+  &:hover{
+    color: @black;
+  }
+
+  &:active {
+    fill: @bg-color-button;
+  }
 }
 
 .minus-adult {
   position: absolute;
-  top: 139px;
+  top: 153px;
   left: 123px;
 
   @media @tablet {
-    top: 170px;
+    top: 182px;
     left: 132px;
   }
 }
 
 .plus-adult {
   position: absolute;
-  top: 139px;
+  top: 153px;
   left: 195px;
 
   @media @tablet {
-    top: 170px;
+    top: 182px;
     left: 207px;
   }
 
@@ -252,11 +259,11 @@
 
 .minus-child {
   position: absolute;
-  top: 190px;
+  top: 204px;
   left: 123px;
 
   @media @tablet {
-    top: 170px;
+    top: 182px;
     left: 340px;
   }
 
@@ -264,21 +271,13 @@
 
 .plus-child {
   position: absolute;
-  top: 190px;
+  top: 204px;
   left: 195px;
 
   @media @tablet {
-    top: 170px;
+    top: 182px;
     left: 414px;
   }
-}
-
-.find-item button:hover {
-  color: @black;
-}
-
-.find-item button:active {
-  fill: @bg-color-button;
 }
 
 .search-button {
