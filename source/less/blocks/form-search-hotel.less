@@ -113,20 +113,15 @@
   }
 }
 
-.form-search-field:hover {
-  font: inherit;
-  background-color: @bg-color-form;
-  font-size: 14px;
-  font-weight: bold;
-  color: @black;
-}
-
-.form-search-field:focus {
-  font: inherit;
-  background-color: @white;
-  font-size: 14px;
-  font-weight: bold;
-  color: @black;
+.form-search-field {
+  &:hover,
+  &:focus {
+    font: inherit;
+    background-color: @bg-color-form;
+    font-size: 14px;
+    font-weight: bold;
+    color: @black;
+  }
 }
 
 .form-search-calendar {
@@ -138,14 +133,18 @@
   border: none;
 }
 
-.form-search-calendar:hover {
-  fill: @black;
+.form-search-calendar {
+  &:hover {
+    fill: @black;
+  }
+
+  &:active {
+    font: inherit;
+    fill: @bg-color-button;
+  }
 }
 
-.form-search-calendar:active {
-  font: inherit;
-  fill: @bg-color-button;
-}
+
 
 .humans {
   display: flex;
@@ -223,8 +222,19 @@
   height: 38px;
   object-fit: contain;
   background-color: transparent;
-  fill: @bg-color-form-calendar;
+  color: @bg-color-form-calendar;
   border: none;
+
+}
+
+.find-item button {
+  &:hover{
+    color: @black;
+  }
+
+  &:active {
+    fill: @bg-color-button;
+  }
 }
 
 .minus-adult {
@@ -271,14 +281,6 @@
     top: 182px;
     left: 414px;
   }
-}
-
-.find-item button:hover {
-  color: @black;
-}
-
-.find-item button:active {
-  fill: @bg-color-button;
 }
 
 .search-button {
