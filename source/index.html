@@ -5,17 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js"></script>
 </head>
 <body>
-  <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>-->
   <div class="container">
-    <!--заголовок страницы-->
     <header class="page-header">
-      <!--навигация-->
       <nav class="main-nav main-nav--no-js">
-        <!--логотип-->
         <a class="main-nav__logo logo" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -23,7 +19,6 @@
             <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Лого Седона">
           </picture>
         </a>
-        <!--меню-->
         <ul class="main-menu main-nav__list">
           <li class="main-menu__item main-menu__item--active">
             <a class="main-menu__link">Главная</a>
@@ -38,26 +33,21 @@
             <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <!--кнопка меню-->
         <button class="main-nav__toggle main-nav__toggle--off" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
       </nav>
-      <!--надпись над фото-->
       <div class="page-header__image-wrapper page-header__image-wrapper--index">
         <img class="page-header__image page-header__image--index" src="img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону">
       </div>
     </header>
 
     <main class="page-main">
-      <!--заголовок страницы-->
       <header class="page-main__header">
         <h1 class="page-main__title page-main__title--index">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="page-main__text page-main__text--index">Рассмотрим 5 причин, по которым Седона круче чем Гранд каньон!</p>
       </header>
-      <!--секция содержание страницы-->
       <section class="content-page">
-        <!--первый блок-->
         <div class="content-page__main">
           <div class="content-page__description content-page__description--first">
             <h2 class="content-page__subtitle content-page__subtitle--main">Настоящий городок</h2>
@@ -75,7 +65,6 @@
             </picture>
           </div>
         </div>
-        <!--блок с информацией для гостей-->
         <ul class="info">
           <li class="info__item info__item--house">
             <h2 class="info__title">Жилье</h2>
@@ -90,7 +79,6 @@
             <p class="info__text">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
           </li>
         </ul>
-        <!--второй блок-->
         <div class="content-page__main content-page__main--reverse">
           <div class="content-page__description">
             <h2 class="content-page__subtitle content-page__subtitle--main">Там есть мост&nbsp;дьявола</h2>
@@ -108,7 +96,6 @@
             </picture>
           </div>
         </div>
-        <!--дополнительные блоки-->
         <ul class="content-page-additional">
           <li class="content-page-additional__item">
             <h2 class="content-page__subtitle">Небольшая площадь</h2>
@@ -127,107 +114,40 @@
           </li>
         </ul>
       </section>
-      <!--поиск отеля-->
       <section class="search-hotel">
         <h2 class="visually-hidden">Заинтересовались?</h2>
         <b class="search-hotel__title">Заинтересовались?</b>
         <p class="search-hotel__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
         <a class="search-hotel__button button" href="#">Найти гостиницу</a>
       </section>
-      <!--форма поиска отеля-->
-      <section class="form-search-hotel">
-        <h2 class="visually-hidden">Поиск отеля</h2>
-        <form action="https://echo.htmlacademy.ru" class="form-search no-js" method="post">
-          <fieldset class="form-body">
-            <p class="form-body__header">
-              <label class="form-search-label-from" for="from">Дата заезда: </label>
-              <input class="form-search-field form-search-field--first" id="from" name="date" placeholder="23 марта 2020" type="text">
-              <button class="form-search-calendar" type="button">
-                <span class="visually-hidden">Календарь</span>
-                <svg width="21" height="22">
-                  <use xlink:href="img/sprite-edited.svg#calendar"></use>
-                </svg>
-              </button>
-            </p>
-            <p>
-              <label class="form-search-label-to" for="to">Дата выезда: </label>
-              <input class="form-search-field" id="to" name="date" placeholder="27 мая 2020" type="text">
-              <button class="form-search-calendar" type="button">
-                <span class="visually-hidden">Календарь</span>
-                <svg width="21" height="22">
-                  <use xlink:href="img/sprite-edited.svg#calendar"></use>
-                </svg>
-              </button>
-            </p>
-            <div class="humans">
-              <p class="find-item">
-                <button class="minus-adult" type="button">
-                  <span class="visually-hidden">Убавить</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="img/sprite-edited.svg#less"></use>
-                  </svg>
-                </button>
-                <button class="plus-adult" type="button">
-                  <span class="visually-hidden">Прибавить</span>
-                  <svg width="11" height="11">
-                    <use xlink:href="img/sprite-edited.svg#more"></use>
-                  </svg>
-                </button>
-                <label class="form-search-number" for="adults">Взрослые:</label>
-                <input class="input-number input-adults" name="adult" id="adults" placeholder="2" type="text">
-              </p>
-              <p class="find-item">
-                <button class="minus-child" type="button">
-                  <span class="visually-hidden">Убавить</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="img/sprite-edited.svg#less"></use>
-                  </svg>
-                </button>
-                <button class="plus-child" type="button">
-                  <span class="visually-hidden">Прибавить</span>
-                  <svg width="11" height="11">
-                    <use xlink:href="img/sprite-edited.svg#more"></use>
-                  </svg>
-                </button>
-                <label class="form-search-number" for="children">Дети:</label>
-                <input class="input-number input-children" name="child" id="children" placeholder="0" type="text">
-              </p>
-            </div>
-            <button class="search-button" type="submit">Найти</button>
-          </fieldset>
-        </form>
-        <!--карта-->
-        <section class="map">
-          <h2 class="visually-hidden">Карта</h2>
-          <div class="map__marker"></div>
-          <div class="map__interactive">
-             <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webP/bg-map-desktop@1x.webp 1x, img/webP/bg-map-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/webP/bg-map-tablet@1x.webp 1x, img/webP/bg-map-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/webP/bg-map-mobile@1x.webp 1x, img/webP/bg-map-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-                <img class="map-banner__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
-            </picture>
-            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838157.8360517193!2d-112.35549774475408!3d34.85486926877189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1560516137746!5m2!1sru!2sru" width="320" height="350" allowfullscreen></iframe>
-          </div>
-        </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map__marker"></div>
+        <div class="map__interactive">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/webP/bg-map-desktop@1x.webp 1x, img/webP/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webP/bg-map-tablet@1x.webp 1x, img/webP/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webP/bg-map-mobile@1x.webp 1x, img/webP/bg-map-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <img class="map-banner__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+          </picture>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838157.8360517193!2d-112.35549774475408!3d34.85486926877189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1560516137746!5m2!1sru!2sru" width="320" height="350" allowfullscreen></iframe>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <!--первая колонка футера-->
       <div class="page-footer__column">
         <b class="page-footer__hashtag">#visitsedona</b>
       </div>
-      <!--вторая колонка футера-->
       <div class="page-footer__column">
         <ul class="social-links">
           <li class="social-links__item">
             <a class="social-links__link" href="https://twitter.com">
               <span class="visually-hidden">Мы в Твиттере</span>
               <svg class="social-links__icon" width="18" height="15">
-                <use xlink:href="img/sprite-edited.svg#icon-twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -235,7 +155,7 @@
             <a class="social-links__link" href="https://www.facebook.com">
               <span class="visually-hidden">Мы в Фейсбук</span>
                 <svg class="social-links__icon" width="8.672px" height="18.944px">
-                  <use xlink:href="img/sprite-edited.svg#icon-facebook"></use>
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
             </a>
           </li>
@@ -243,27 +163,27 @@
             <a class="social-links__link" href="https://www.youtube.com">
               <span class="visually-hidden">Мы в Ютубе</span>
                 <svg class="social-links__icon" width="19.979px" height="14.015px">
-                  <use xlink:href="img/sprite-edited.svg#icon-youtube"></use>
+                  <use xlink:href="#icon-youtube"></use>
                 </svg>
             </a>
           </li>
         </ul>
       </div>
-      <!--третья колонка футера-->
       <div class="page-footer__column">
         <span class="page-footer__copyright-text">Разработано</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__copyright-icon" width="26.943px" height="34.09px">
-            <use xlink:href="img/sprite-edited.svg#logo-academy"></use>
+            <use xlink:href="#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </footer>
   </div>
 
-  <!--подключим файл со скриптом-->
-  <script src="js/index.js"></script>
-  <script src="js/form-search-hotel.js"></script>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
+  <script src="js/index.js"></script>
 </body>
 </html>
