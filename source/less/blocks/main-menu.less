@@ -26,7 +26,7 @@
 
   @media @tablet {
     flex-basis: 20%;
-    color: @font-color-base;
+    color: @black;
     box-shadow: none;
     background-color: transparent;
   }
@@ -70,6 +70,18 @@
     @media @tablet {
       color: @font-color-item--active;
     }
+
+    &:hover {
+      @media @tablet {
+        color: @font-color-item--hover_active;
+      }
+    }
+
+    .main-menu__link:active {
+        @media @tablet {
+          color: rgba(118, 99, 87, 0.3);
+        }
+    }
   }
 }
 
@@ -84,6 +96,13 @@
     padding: 15px 20px 15px;
     font-size: 14px;
     line-height: 26px;
+
+    &:active {
+      @media @tablet {
+        color: fade(@font-color-heading, 30%);
+        background-color: transparent;
+      }
+  }
   }
 }
 
