@@ -1,11 +1,11 @@
   // Открытие/закрытие меню
 
-  var mainNav = '.main-nav';
-  var mainMenu = '.main-menu';
-  var noJS = 'main-nav--no-js';
-  var menuClosed = 'main-menu--menu-closed';
-  var btnToggle = 'main-nav__toggle';
-  var btnToggleOff = 'main-nav__toggle--off';
+  var mainNav = ".main-nav";
+  var mainMenu = ".main-menu";
+  var noJS = "main-nav--no-js";
+  var menuClosed = "main-menu--menu-closed";
+  var btnToggle = "main-nav__toggle";
+  var btnToggleOff = "main-nav__toggle--off";
 
   var mainNav = document.querySelector(mainNav);
   var mainMenu = document.querySelector(mainMenu);
@@ -18,7 +18,7 @@
     }
   }
 
-  mainNav.addEventListener('click', function (event) {
+  mainNav.addEventListener("click", function (event) {
     if (event.target.classList.contains(btnToggle)) {
       event.preventDefault();
 
